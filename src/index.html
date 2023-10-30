@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+</head>
+<body>
+  <main class="main">
+    <h1 class="guess-title">Угадай число</h1>
+    <p class="guess__subtitle">
+      Компьютер загадал случайное число в пределах от 1 до 100.
+    </p>
+    <p class="guess__subtitle">
+      Попробуйте его угадать.
+    </p>
+    <form class="guess__form">
+      <label class="guess__label" for="">Введите число: </label>
+      <input class="guess__input" type="text" />
+      <button class="guess__check-button">Проверить</button>
+    </form>
+    <div class="guess__result">
+      <div class="guess__result-item">
+        <span class="guess__result-text">Результат:</span>
+        <span class="guess__result-value"></span>
+      </div>
+      <div class="guess__result-item">
+        <span class="guess__result-text">Подсказка:</span>
+        <span class="guess__result-hint"></span>
+      </div>
+      <div class="guess__result-item">
+        <span class="guess__result-text">Число попыток:</span>
+        <span class="guess__result-count"></span>
+      </div>
+    </div>
+    <p class="guess__subtitle">
+      Выберите диапазон для игры от 1 до 1000
+    </p>
+    <form class="guess__form">
+      <input class="guess__min" type="text" />
+      <input class="guess__max" type="text" />
+      <button class="guess__choose-button">Выбрать</button>
+    </form>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
